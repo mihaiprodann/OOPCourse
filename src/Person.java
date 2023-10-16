@@ -36,18 +36,18 @@ public class Person implements Comparable, Storable{
                 '}';
     }
     @Override
-    public void store(String filename) {
-        try
-        {
-            FileWriter fw = new FileWriter(filename, true);
-            BufferedWriter bw = new BufferedWriter(fw);
+    public void store(String filename) throws IOException {
+        BufferedWriter bw = null;
+        FileWriter fw;
+        try {
+            fw = new FileWriter(filename, true);
+            bw = new BufferedWriter(fw);
             bw.newLine();
             bw.write(this.toString());
-            bw.close();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e);
+        } finally {
+            bw.close();
         }
     }
 

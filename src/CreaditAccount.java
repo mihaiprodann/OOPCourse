@@ -16,14 +16,4 @@ public class CreaditAccount extends Account {
         return true;
     }
 
-    public int compareTo(Object o) {
-        if(this == o)
-            return 0;
-
-        Account a = (Account) o;
-        if (getIBAN().compareTo(a.getIBAN()) != 0)
-            return getIBAN().compareTo(a.getIBAN());
-
-        return getAmmount() - a.getAmmount();
-    }
 }

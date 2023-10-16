@@ -1,7 +1,6 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.Arrays;
 
@@ -16,13 +15,13 @@ public class Main {
             new Person("George", LocalDate.of(1980,1,1),'m'),
             new Person("George", LocalDate.of(1970,1,1),'f'),
         };
-        String filename = "persons.txt";
-        PrintWriter writer = new PrintWriter(new FileWriter(filename));
+        String personsFile = "persons.txt";
+        PrintWriter writer = new PrintWriter(new FileWriter(personsFile));
         writer.print("");
         System.out.println("-------PERSONS-------");
         for (Person p: persons) {
             System.out.println(p);
-            p.store(filename);
+            p.store(personsFile);
         }
         System.out.println("---------------------");
 
@@ -43,7 +42,6 @@ public class Main {
         }
         System.out.println("---------------------");
         Arrays.sort(accounts);
-
         System.out.println();
         System.out.println("-------ACCOUNTS AFTER SORTING-------");
         for(Account aThat: accounts){

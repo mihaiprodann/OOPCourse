@@ -1,12 +1,21 @@
 import java.io.*;
 
-public abstract class Account implements Comparable, Storable {
+public abstract class Account implements Comparable {
     private String IBAN;
     private int ammount;
 
     public Account(String IBAN, int ammount) {
         this.IBAN = IBAN;
         this.ammount = ammount;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Account a = (Account) o;
+        if (getIBAN().compareTo(a.getIBAN()) != 0)
+            return getIBAN().compareTo(a.getIBAN());
+
+        return getAmmount() - a.getAmmount();
     }
 
 
@@ -25,22 +34,6 @@ public abstract class Account implements Comparable, Storable {
 
     public String getIBAN() {
         return IBAN;
-    }
-
-    @Override
-    public void store(String filename) {
-        try
-        {
-            FileWriter fw = new FileWriter(filename, true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.newLine();
-            bw.write(this.toString());
-            bw.close();
-        }
-        catch (Exception e)
-        {
-            System.out.println(e);
-        }
     }
 
     @Override
