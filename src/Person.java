@@ -15,12 +15,13 @@ public class Person implements Comparable, Storable{
         this.gender = gender;
     }
     public int compareTo(Object ot){
-        if(this == ot) return 0;
-        Person p= (Person) ot;
-        if(name.compareTo(p.name)!=0)
+        if(this == ot)
+            return 0;
+        Person p = (Person) ot;
+        if (name.compareTo(p.name) != 0)
             return name.compareTo(p.name);
         //names are equal
-        if(bday.compareTo(p.bday)!=0)
+        if(bday.compareTo(p.bday) != 0)
             return bday.compareTo(p.bday);
         // names AND bday are equal
         return gender-p.gender;
