@@ -1,7 +1,8 @@
+import java.io.*;
 import java.time.LocalDate;
 import java.util.Arrays;
 
-public class Person implements Comparable{
+public class Person implements Comparable, Storable{
     //first by name, if names are equal then bday, if bdays are equal
     // then age
     String name;
@@ -33,20 +34,20 @@ public class Person implements Comparable{
                 ", gender=" + gender +
                 '}';
     }
-    public static void main(String[] args) {
-        Person[] persons ={
-                new Person("George", LocalDate.of(1970,1,1),'m'),
-                new Person("John", LocalDate.of(1970,1,1),'m'),
-                new Person("George", LocalDate.of(1980,1,1),'m'),
-                new Person("George", LocalDate.of(1980,1,1),'m'),
-                new Person("George", LocalDate.of(1970,1,1),'f'),
-        };
-        for(Person p : persons)
-            System.out.println(p);
-        System.out.println("==========================================");
-        Arrays.sort(persons); //this modifies the array
-        for(Person p : persons)
-            System.out.println(p);
+    @Override
+    public void store(String filename) {
+        try
+        {
+            FileWriter fw = new FileWriter(filename, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.newLine();
+            bw.write(this.toString());
+            bw.close();
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
 
 }
