@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Account implements Comparable, Storable {
+public abstract class Account implements Comparable, Storable {
     private String IBAN;
     private int ammount;
 
@@ -9,12 +9,6 @@ public class Account implements Comparable, Storable {
         this.ammount = ammount;
     }
 
-    public int compareTo(Object aThat){
-        if (this == aThat)
-            return 0;
-        Account a = (Account) aThat;
-        return IBAN.compareTo(a.IBAN);
-    }
 
     public int getAmmount() {
         return ammount;
@@ -23,6 +17,7 @@ public class Account implements Comparable, Storable {
     protected void setAmmount(int ammount) {
         this.ammount = ammount;
     }
+    abstract boolean withdraw(int ammount);
 
     public void deposit(int ammount) {
         this.ammount += ammount;
@@ -52,5 +47,4 @@ public class Account implements Comparable, Storable {
     public String toString() {
         return "IBAN: " + IBAN + ", Amount: " + ammount;
     }
-
 }

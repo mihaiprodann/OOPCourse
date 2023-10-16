@@ -29,28 +29,28 @@ public class Main {
 
         // ACCOUNT
         Account[] accounts = {
-            new Account("RO3533400",234),
-            new Account("RO5341253",2465),
-            new Account("RO5134153",124),
-            new Account("RO5367893",675),
-            new Account("RO5323453",34),
-            new Account("RO5355555",897),
-            new Account("RO5787777",245)
+            new DebitAccount("RO1111", 15400),
+            new DebitAccount("RO3333", 15400),
+            new DebitAccount("RO2222", 15400),
+            new CreaditAccount("RO0000", 15400, 1000),
+            new CreaditAccount("RO4444", 15400, 1000),
+            new CreaditAccount("RO5555", 15400, 1000),
         };
 
-
+        System.out.println("-------ACCOUNTS-------");
         for (Account aThat: accounts){
             System.out.println(aThat.getIBAN());
         }
         System.out.println("---------------------");
         Arrays.sort(accounts);
+
+        System.out.println();
+        System.out.println("-------ACCOUNTS AFTER SORTING-------");
         for(Account aThat: accounts){
             System.out.println(aThat.getIBAN());
         }
+        System.out.println("------------------------------------");
 
-        Account account = new Account("123456789", 15400);
-        account.store("account.txt");
-        System.out.println("Account information stored in 'account.txt'");
 
     }
 }
