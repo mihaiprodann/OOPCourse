@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c291d2a-8c83-499a-87a9-1470f31be3f0" name="Changes" comment="inital commit lab1ex1">
+      <change afterPath="$PROJECT_DIR$/FormOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeometricalForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +42,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mihai/Desktop/2nd Year - 1st Semester/8. Object Oriented Programming (OOP)/Labs",
+    "last_opened_file_path": "C:/Users/mihai/Desktop/2nd Year - 1st Semester/8. Object Oriented Programming (OOP)/Homeworks/HW2 OOP",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,6 +64,8 @@
       <workItem from="1696845535305" duration="20000" />
       <workItem from="1696845572924" duration="826000" />
       <workItem from="1697446955572" duration="911000" />
+      <workItem from="1697810636737" duration="1190000" />
+      <workItem from="1697812076498" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit lab1ex1">
       <created>1696845829258</created>
