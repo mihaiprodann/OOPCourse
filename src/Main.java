@@ -34,18 +34,20 @@ public class Main {
             new CreaditAccount("RO0000", 15400, 1000),
             new CreaditAccount("RO4444", 15400, 1000),
             new CreaditAccount("RO5555", 15400, 1000),
+            new CreaditAccount("RO0000", 15400, 1000),
+            new DebitAccount("RO0000", 124134),
         };
 
         System.out.println("-------ACCOUNTS-------");
         for (Account aThat: accounts){
-            System.out.println(aThat.getIBAN());
+            System.out.println(aThat);
         }
         System.out.println("---------------------");
         Arrays.sort(accounts);
         System.out.println();
         System.out.println("-------ACCOUNTS AFTER SORTING-------");
         for(Account aThat: accounts){
-            System.out.println(aThat.getIBAN());
+            System.out.println(aThat);
         }
         System.out.println("------------------------------------");
 
