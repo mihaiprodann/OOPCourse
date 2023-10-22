@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c291d2a-8c83-499a-87a9-1470f31be3f0" name="Changes" comment="inital commit lab1ex1">
-      <change afterPath="$PROJECT_DIR$/FormOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeometricalForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,16 +40,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mihai/Desktop/2nd Year - 1st Semester/8. Object Oriented Programming (OOP)/Homeworks/HW2 OOP",
+    "last_opened_file_path": "C:/Users/mihai/Desktop/2nd Year - 1st Semester/8. Object Oriented Programming (OOP)/Homeworks/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs\src" />
+      <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs" />
+      <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs\Problem2" />
+      <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs\Problem1" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,6 +75,8 @@
       <workItem from="1697446955572" duration="911000" />
       <workItem from="1697810636737" duration="1190000" />
       <workItem from="1697812076498" duration="456000" />
+      <workItem from="1697813684349" duration="2155000" />
+      <workItem from="1697995331119" duration="1290000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit lab1ex1">
       <created>1696845829258</created>
