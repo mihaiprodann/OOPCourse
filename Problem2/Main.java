@@ -1,21 +1,27 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Vehicle[] vehicles = {
+                new Truck(30000, "Truck Manufacturer", "USA"),
+                new Bus(25000, "Bus Manufacturer", "Germany"),
+                new Minibus(15000, "Minibus Manufacturer", "France"),
                 new Bus(10000, "Bus", "Romania"),
-                new Minibus(10000, "Minibus", "Romania"),
-                new Truck(10000, "Truck", "Romania"),
-                new Bus(10000, "Bus", "Germany"),
-                new Minibus(10000, "Minibus", "Germany"),
-                new Truck(10000, "Truck", "Germany"),
+                new Minibus(10300, "Minibus", "Romania"),
+                new Truck(12300, "Truck", "Romania"),
+                new Bus(10450, "Bus", "Germany"),
+                new Minibus(10790, "Minibus", "Germany"),
         };
 
+        System.out.println("\n\n\nUnsorted vehicles:\n----------------------------------------");
         for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle);
-            System.out.println("VAT: " + vehicle.computeVAT());
-            System.out.println("Road tax: " + vehicle.computeRoadTax());
-            System.out.println("Custom tax: " + vehicle.computeCustomTax());
-            System.out.println("Total tax: " + vehicle.computeTotalTax());
-            System.out.println("----------------------------------------");
+        }
+
+        Arrays.sort(vehicles);
+        System.out.println("\n\n\nSorted vehicles:\n----------------------------------------");
+        for (Vehicle vehicle : vehicles) {
+            System.out.println(vehicle);
         }
     }
 }

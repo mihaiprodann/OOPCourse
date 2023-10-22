@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7c291d2a-8c83-499a-87a9-1470f31be3f0" name="Changes" comment="inital commit lab1ex1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem2/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mihai/Desktop/2nd Year - 1st Semester/8. Object Oriented Programming (OOP)/Homeworks/test",
+    "last_opened_file_path": "C:/Users/mihai/Desktop/2nd Year - 1st Semester/8. Object Oriented Programming (OOP)/Homeworks/untitled",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,9 +57,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs\Problem2" />
       <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs\src" />
       <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs" />
-      <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs\Problem2" />
       <recent name="C:\Users\mihai\Desktop\2nd Year - 1st Semester\8. Object Oriented Programming (OOP)\Labs\Problem1" />
     </key>
   </component>
@@ -76,7 +78,7 @@
       <workItem from="1697810636737" duration="1190000" />
       <workItem from="1697812076498" duration="456000" />
       <workItem from="1697813684349" duration="2155000" />
-      <workItem from="1697995331119" duration="1290000" />
+      <workItem from="1697995331119" duration="2091000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit lab1ex1">
       <created>1696845829258</created>

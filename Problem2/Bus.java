@@ -8,6 +8,6 @@ public class Bus extends Vehicle implements Taxable {
     }
 
     public String toString() {
-        return "Bus [basePrice=" + getBasePrice() + ", name=" + getName() + ", country=" + getCountry() + "]";
+        return "[BUS] Total Tax: " + computeRoadTax() + " | Base price: " + getBasePrice();
     }
 }

@@ -8,6 +8,6 @@ public class Minibus extends Vehicle implements Taxable {
     }
 
     public String toString() {
-        return "Minibus [basePrice=" + getBasePrice() + ", name=" + getName() + ", country=" + getCountry() + "]";
+        return "[MINIBUS] Total Tax: " + computeRoadTax() + " | Base price: " + getBasePrice();
     }
 }

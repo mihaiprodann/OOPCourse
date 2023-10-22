@@ -8,6 +8,6 @@ public class Truck extends Vehicle implements Taxable {
 
     @Override
     public String toString() {
-        return "Truck [basePrice=" + getBasePrice() + ", name=" + getName() + ", country=" + getCountry() + "]";
+        return "[TRUCK] Total Tax: " + computeRoadTax() + " | Base price: " + getBasePrice();
     }
 }

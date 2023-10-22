@@ -1,4 +1,4 @@
-public abstract class Vehicle implements Taxable {
+public abstract class Vehicle implements Taxable, Comparable {
     private double basePrice;
     private String name;
     private String country;
@@ -13,20 +13,12 @@ public abstract class Vehicle implements Taxable {
         return basePrice;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
     public double computeVAT() {
         return basePrice * 0.19;
     }
 
     public double computeCustomTax() {
-        if (this.country.equals("Romania"))
+        if (!this.country.equals("Romania"))
             return basePrice * 0.1;
         return 0;
     }
@@ -35,5 +27,21 @@ public abstract class Vehicle implements Taxable {
         return computeVAT() + computeRoadTax() + computeCustomTax();
     }
 
+    @Override
+    public int compareTo(Object o) {
+        Vehicle v = (Vehicle) o;
+        if (this.computeTotalTax() < v.computeTotalTax())
+            return -1;
+        if (this.computeTotalTax() > v.computeTotalTax())
+            return 1;
+        if (this.computeTotalTax() == v.computeTotalTax()) {
+            if (this.getBasePrice() < v.getBasePrice())
+                return 1;
+            if (this.getBasePrice() > v.getBasePrice())
+                return -1;
+            return 0;
+        }
+        return 0;
+    }
 
 }
