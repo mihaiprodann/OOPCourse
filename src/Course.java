@@ -37,7 +37,10 @@ public class Course implements Comparable{
         if (streamComparison == 0) {
             int typeComparison = this.getType().compareTo(((Course) o).getType());
             if (typeComparison == 0) {
-                return this.getName().compareTo(((Course) o).getName());
+                int nameComparison =  this.getName().compareTo(((Course) o).getName());
+                if (nameComparison == 0)
+                    throw new DuplicateName();
+                return nameComparison;
             }
             return typeComparison;
         }

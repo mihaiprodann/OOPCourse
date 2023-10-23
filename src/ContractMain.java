@@ -7,7 +7,7 @@ public class ContractMain {
         contract.addCourse(new Course("OOP", Course.Type.FOUNDAMENTAL, Course.Stream.ENGLISH, 3));
         contract.addCourse(new Course("DB", Course.Type.DISCIPLINE, Course.Stream.GERMAN, 1));
         contract.addCourse(new Course("SM", Course.Type.FOUNDAMENTAL, Course.Stream.FRENCH, 5));
-        contract.addCourse(new Course("PLM", Course.Type.SPECIALIZATION, Course.Stream.GERMAN, 78));
+        contract.addCourse(new Course("PTMS", Course.Type.SPECIALIZATION, Course.Stream.GERMAN, 78));
 
         System.out.println("Unsorted contract:");
         contract.display();
