@@ -7,12 +7,11 @@ public class Card implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        Card card1 = (Card) this;
-        Card card2 = (Card) o;
-        int suitComparison = card1.getSuit().compareTo(card2.getSuit());
+    public int compareTo(Object anotherCard) {
+        Card card2 = (Card) anotherCard;
+        int suitComparison = this.getSuit().compareTo(((Card) anotherCard).getSuit());
         if (suitComparison == 0)
-            return card1.getRank().compareTo(card2.getRank());
+            return this.getRank().compareTo(((Card) anotherCard).getRank());
         return suitComparison;
     }
 

@@ -11,12 +11,10 @@ public class Main {
         hand.addCard(new Card(Card.Rank.QUEEN, Card.Suit.SPADES));
 
         Arrays.sort(hand.hand);
-        System.out.println("The cards are: ");
         hand.display();
 
         hand.deleteCard(Card.Rank.ACE, Card.Suit.CLUBS);
-        System.out.println("---------------------------");
-        System.out.println("After deleting Ace of Clubs:");
+        System.out.println("\n\n\n[After deleting Ace of Clubs]");
         hand.display();
         hand.store("store.txt");
     }
