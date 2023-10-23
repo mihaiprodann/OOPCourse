@@ -1,13 +1,23 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Hand hand = new Hand(5);
         hand.addCard(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
-        hand.addCard(new Card(Card.Rank.TWO, Card.Suit.DIAMONDS));
-        hand.addCard(new Card(Card.Rank.FOUR, Card.Suit.HEARTS));
-        hand.addCard(new Card(Card.Rank.SEVEN, Card.Suit.DIAMONDS));
-        hand.addCard(new Card(Card.Rank.FIVE, Card.Suit.CLUBS));
+        hand.addCard(new Card(Card.Rank.TWO, Card.Suit.HEARTS));
+        hand.addCard(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
+        hand.addCard(new Card(Card.Rank.KING, Card.Suit.DIAMONDS));
+        hand.addCard(new Card(Card.Rank.QUEEN, Card.Suit.SPADES));
+
+        Arrays.sort(hand.hand);
+        System.out.println("The cards are: ");
         hand.display();
-        hand.sort();
+
+        hand.deleteCard(Card.Rank.ACE, Card.Suit.CLUBS);
+        System.out.println("---------------------------");
+        System.out.println("After deleting Ace of Clubs:");
         hand.display();
+        hand.store("store.txt");
     }
 }

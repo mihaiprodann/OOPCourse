@@ -1,24 +1,21 @@
 import java.io.*;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
-public class Hand implements Storable{
-    private Card[] hand;
-    private int handSize;
+public class Hand implements Storable {
+    final Card[] hand;
+    private final int handSize;
 
     public Hand(int handSize){
         this.handSize = handSize;
         hand = new Card[handSize];
     }
 
-    public int addCard(Card card){
+    public void addCard(Card card){
         for(int i = 0; i < handSize; i++){
             if(hand[i] == null){
                 hand[i] = card;
-                return 1;
+                return;
             }
         }
-        return 0;
     }
 
     public int deleteCard(Card.Rank rank, Card.Suit suit){
@@ -29,21 +26,6 @@ public class Hand implements Storable{
             }
         }
         return 0;
-    }
-
-    public void sort(){
-        Card temp;
-        for(int i = 0; i < handSize; i++){
-            for(int j = 0; j < handSize; j++){
-                if(hand[i] != null && hand[j] != null){
-                    if(hand[i].getRank().ordinal() < hand[j].getRank().ordinal()){
-                        temp = hand[i];
-                        hand[i] = hand[j];
-                        hand[j] = temp;
-                    }
-                }
-            }
-        }
     }
 
     public void display(){
@@ -57,10 +39,11 @@ public class Hand implements Storable{
     }
 
     public void store(String file) {
-        try (FileWriter fileWriter=new FileWriter(file);
-             PrintWriter printWriter=new PrintWriter(fileWriter)) {
-            for (int i=0;i<handSize;i++){
-                printWriter.println(hand[i]);
+        try (FileWriter fileWriter = new FileWriter(file);
+             PrintWriter printWriter = new PrintWriter(fileWriter)) {
+            for (int i = 0; i < handSize; i++) {
+                if(hand[i] != null)
+                    printWriter.println(hand[i]);
             }
             System.out.println("Hand contents have been saved to " + file);
         } catch (IOException e) {
