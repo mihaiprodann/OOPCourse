@@ -1,7 +1,6 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Main {
+public class CardsMain {
     public static void main(String[] args) {
         Hand hand = new Hand(5);
         hand.addCard(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
