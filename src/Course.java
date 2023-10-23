@@ -1,7 +1,8 @@
 public class Course implements Comparable{
-    private String name;
-
-
+    private final String name;
+    private final Type type;
+    private final Stream stream;
+    private final int creditPoints;
 
     public enum Type {
         FOUNDAMENTAL, SPECIALIZATION, DISCIPLINE
@@ -11,9 +12,6 @@ public class Course implements Comparable{
         ENGLISH, FRENCH, GERMAN
     }
 
-    private Type type;
-    private Stream stream;
-    private int creditPoints;
     public Type getType() {
         return type;
     }
