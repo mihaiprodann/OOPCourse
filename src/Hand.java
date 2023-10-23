@@ -44,4 +44,14 @@ public class Hand implements Sortable{
             }
         }
     }
+
+    public void display(){
+        System.out.println("Your hand:\n-----------------");
+        for(int i = 0; i < handSize; i++){
+            if(hand[i] != null){
+                System.out.print(hand[i] + ", ");
+            }
+        }
+        System.out.println("\n-----------------");
+    }
 }

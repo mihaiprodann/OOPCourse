@@ -1,6 +1,6 @@
 public class Card {
-    public Rank rank;
-    public Suit suit;
+    public final Rank rank;
+    public final Suit suit;
     public Card(Rank rank, Suit suit){
         this.rank = rank;
         this.suit = suit;
