@@ -1,7 +1,8 @@
+import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Hand implements Sortable{
+public class Hand implements Storable{
     private Card[] hand;
     private int handSize;
 
@@ -53,5 +54,17 @@ public class Hand implements Sortable{
             }
         }
         System.out.println("\n-----------------");
+    }
+
+    public void store(String file) {
+        try (FileWriter fileWriter=new FileWriter(file);
+             PrintWriter printWriter=new PrintWriter(fileWriter)) {
+            for (int i=0;i<handSize;i++){
+                printWriter.println(hand[i]);
+            }
+            System.out.println("Hand contents have been saved to " + file);
+        } catch (IOException e) {
+            System.err.println("Error while saving the hand's contents to " + file);
+        }
     }
 }
