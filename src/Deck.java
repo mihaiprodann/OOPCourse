@@ -1,14 +1,28 @@
 public class Deck {
-    private PlayingCard[] cards;
+    private final PlayingCard[] cards;
+    private int index = 0;
+    public Deck(int length) {
+        cards = new PlayingCard[length];
+    }
 
     public Deck() {
-        cards = new PlayingCard[52];
-        int i = 0;
-        for (PlayingCard.Suit suit : PlayingCard.Suit.values()) {
-            for (PlayingCard.Rank rank : PlayingCard.Rank.values()) {
-                cards[i++] = new PlayingCard(rank, suit);
-            }
+        int length = 52;
+        cards = new PlayingCard[length];
+    }
+
+    public PlayingCard[] getCards() {
+        return cards;
+    }
+
+    public void addCard(PlayingCard card) {
+        cards[index++] = card;
+    }
+
+    public PlayingCard removeCard() {
+        if(index == cards.length) {
+            index--;
         }
+        return cards[index--];
     }
 
     public void shuffle() {
@@ -20,4 +34,17 @@ public class Deck {
         }
     }
 
+    public boolean isEmpty() {
+        return index == 0;
+    }
+
+    public int getHighestCard() {
+        int highestCardIndex = 0;
+        for (int i = 1; i < cards.length; i++) {
+            if (cards[i].compareTo(cards[highestCardIndex]) > 0) {
+                highestCardIndex = i;
+            }
+        }
+        return highestCardIndex;
+    }
 }
