@@ -1,7 +1,7 @@
 
 public class Employee2 {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
     public Employee2(String name, int age) {
         this.name = name;
         this.age=age;

@@ -49,5 +49,12 @@ public class EmployeeList {
         while (iterator.hasNext()){
             System.out.println(iterator.next().toString());
         }
+
+        //  Add all the employees to a TreeSet and use a for each loop to parse and display the set
+        TreeSet<Employee> employeeTreeSet=new TreeSet<>(employeeList);
+        System.out.println("\nTreeSet: ");
+        for (Employee employee : employeeTreeSet) {
+            System.out.println(employee.toString());
+        }
     }
 }
