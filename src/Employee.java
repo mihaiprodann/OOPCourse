@@ -15,36 +15,6 @@ public class Employee implements Comparable<Employee> {
         this.specialization=specialization;
         this.salary=salary;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setCNP(String CNP) {
-        this.CNP = CNP;
-    }
-    public void setHiringDate(LocalDate hiringDate) {
-        this.hiringDate = hiringDate;
-    }
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-    public void setSpecialization(String specialization) {
-        this.specialization = specialization;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getCNP() {
-        return CNP;
-    }
-    public double getSalary() {
-        return salary;
-    }
-    public LocalDate getHiringDate() {
-        return hiringDate;
-    }
-    public String getSpecialization() {
-        return specialization;
-    }
 
     public int hashCode() {
         return Objects.hash(name, CNP, hiringDate, specialization, salary);
@@ -73,16 +43,20 @@ public class Employee implements Comparable<Employee> {
     @Override
     public int compareTo(Employee o){
         if (o == null){
-            throw new Error("Comp to null");
+            throw new Error("(!) Comparing with null.");
         }
-        int nameComparison=this.name.compareTo(o.name);
-        if (nameComparison!=0){
+        int nameComparison = this.name.compareTo(o.name);
+        if (nameComparison != 0){
             return nameComparison;
         }
-        int cnpComparison=this.CNP.compareTo(o.CNP);
-        if (cnpComparison!=0){
+        int cnpComparison = this.CNP.compareTo(o.CNP);
+        if (cnpComparison != 0){
             return cnpComparison;
         }
         return Double.compare(this.salary, o.salary);
+    }
+
+    public String getSpecialization() {
+        return specialization;
     }
 }
