@@ -25,7 +25,7 @@ public class EmployeeList {
             System.out.println(employee.toString());
         }
 
-        //Use a ListIterator to parse the list backwards and add an element at the middle of the list.
+
         ListIterator<Employee> listIterator=employeeList.listIterator(employeeList.size());
         while (listIterator.hasPrevious()){
             Employee employee=listIterator.previous();
@@ -40,17 +40,17 @@ public class EmployeeList {
             System.out.println(employee.toString());
         }
 
-        // Add all the employees to a HashSet
+
         HashSet<Employee> employeeHashSet=new HashSet<>(employeeList);
 
-        // Use an Iterator to parse the set
+
         Iterator<Employee> iterator=employeeHashSet.iterator();
         System.out.println("\nSet: ");
         while (iterator.hasNext()){
             System.out.println(iterator.next().toString());
         }
 
-        //  Add all the employees to a TreeSet and use a for each loop to parse and display the set
+
         TreeSet<Employee> employeeTreeSet=new TreeSet<>(employeeList);
         System.out.println("\nTreeSet: ");
         for (Employee employee : employeeTreeSet) {

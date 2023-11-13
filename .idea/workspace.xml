@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7c291d2a-8c83-499a-87a9-1470f31be3f0" name="Changes" comment="inital commit lab1ex1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EmpMain2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmpMain2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Employee2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EmployeeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,9 +50,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.EmpMain2">
-    <configuration name="EmpMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EmpMain2" />
+  <component name="RunManager" selected="Application.Employee2Main">
+    <configuration name="Employee2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Employee2Main" />
       <module name="lab1oop" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,7 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmpMain2" />
+        <item itemvalue="Application.Employee2Main" />
         <item itemvalue="Application.EmployeeList" />
       </list>
     </recent_temporary>
