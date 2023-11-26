@@ -18,13 +18,13 @@ public class Employee2Main {
         }
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a name: ");
+        System.out.print("Enter a name: ");
         String name = scanner.nextLine();
         if (employeeMap.containsKey(name)) {
             System.out.println(employeeMap.get(name).toString());
         }
         else {
-            System.out.println("(!) Employee not found.");
+            System.out.println("(!) Employee not found with name: " + name + ".");
         }
     }
 }

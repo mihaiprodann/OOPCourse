@@ -32,9 +32,9 @@ public class Employee implements Comparable<Employee> {
     @Override
     public boolean equals(Object o){
         if (this == o) return true;
-        if (o == null||getClass()!=o.getClass()) return false;
-        Employee employee=(Employee) o;
-        return Double.compare(employee.salary, salary)==0 &&
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Double.compare(employee.salary, salary) == 0 &&
                 Objects.equals(name, employee.name) &&
                 Objects.equals(CNP, employee.CNP) &&
                 Objects.equals(hiringDate, employee.hiringDate) &&

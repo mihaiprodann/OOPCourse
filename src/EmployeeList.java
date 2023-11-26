@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class EmployeeList {
     public static void main(String[] args){
         ArrayList<Employee> employeeList=new ArrayList<>();
-        for (int i=0; i<10; i++){
+        for (int i = 0; i < 10; i++){
             int rand = (int) (Math.random() * 3);
             String specialization;
             if (rand % 3 == 0) {
@@ -41,7 +41,7 @@ public class EmployeeList {
         }
 
 
-        HashSet<Employee> employeeHashSet=new HashSet<>(employeeList);
+        HashSet<Employee> employeeHashSet = new HashSet<>(employeeList);
 
 
         Iterator<Employee> iterator=employeeHashSet.iterator();
@@ -51,10 +51,10 @@ public class EmployeeList {
         }
 
 
-        TreeSet<Employee> employeeTreeSet=new TreeSet<>(employeeList);
-        System.out.println("\nTreeSet: ");
-        for (Employee employee : employeeTreeSet) {
-            System.out.println(employee.toString());
+        TreeSet<Employee> empTreeSet= new TreeSet<>(employeeList);
+        System.out.println("\nDisplaying employees from TreeSet");
+        for (Employee employee : empTreeSet) {
+            System.out.println(employee);
         }
     }
 }
