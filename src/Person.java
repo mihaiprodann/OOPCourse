@@ -7,11 +7,19 @@ public class Person {
     private final String location;
 
     public Person(String name, boolean gender, String jobDescription, int experience, String location) {
-        this.name = name;
+        if(name == null || name.isEmpty()) {
+            this.name = "Not provided";
+        } else {
+            this.name = name;
+        }
         this.gender = gender;
-        this.jobDescription = jobDescription;
-        this.experience = experience;
+        if(jobDescription == null || jobDescription.isEmpty()) {
+            this.jobDescription = "Not provided";
+        } else {
+            this.jobDescription = jobDescription;
+        }        this.experience = experience;
         this.location = location;
+
     }
 
     @Override

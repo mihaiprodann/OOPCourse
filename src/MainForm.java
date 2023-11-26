@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -81,7 +79,8 @@ public class MainForm {
 
         JSlider employeeExperienceSlider = new JSlider(0, 10, 0);
         employeeExperienceSlider.setMaximumSize(new Dimension(160, 20));
-        employeeExperienceSlider.setValue(1);
+        employeeExperienceSlider.setValue(0);
+        employeeExperienceTextField.setText("0");
 
         employeeExperienceSlider.addChangeListener(e -> {
             employeeExperienceTextField.setText(String.valueOf(employeeExperienceSlider.getValue()));
@@ -128,7 +127,8 @@ public class MainForm {
             employeeNameTextField.setText("");
             maleGender.setSelected(true);
             employeeJobDescriptionTextArea.setText("");
-            employeeExperienceSlider.setValue(1);
+            employeeExperienceSlider.setValue(0);
+            employeeExperienceTextField.setText("0");
             employeeLocationComboBox.setSelectedIndex(0);
         });
 
@@ -143,6 +143,7 @@ public class MainForm {
         });
 
 
+        // Save all button
         JButton SaveAllButton = new JButton("Save All");
 
         SaveAllButton.addActionListener(e -> {
@@ -158,6 +159,8 @@ public class MainForm {
             }
         });
 
+
+        // Buttons box
         Box buttonBox = Box.createHorizontalBox();
         buttonBox.add(addButton);
         buttonBox.add(Box.createHorizontalStrut(10));
